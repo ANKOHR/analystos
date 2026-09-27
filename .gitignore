@@ -10,3 +10,6 @@ data/
 data-*/
 analystos-prompt.txt
 codex-build.log
+launch-codex.py
+BRIEF.md
+*.egg-info/
