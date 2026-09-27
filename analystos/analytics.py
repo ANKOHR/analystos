@@ -302,10 +302,10 @@ def analyze(cleaned_path: Path, raw_data_dir: Path, cleaning: dict[str, Any], qa
     hypotheses = [
         {
             "id": "HYP-001",
-            "classification": "data-backed candidate",
-            "text": "The reported monthly mismatch is localized to the periods listed in the reconciliation calculation.",
+            "classification": "data-backed candidate explanation",
+            "text": "A monthly rollup preparation discrepancy may explain the reported mismatch because monthly totals differ from the summed daily totals in the listed periods.",
             "evidence_pointer": "CALC-007",
-            "caveat": "The calculations locate the difference but do not identify its operational cause.",
+            "caveat": "The calculations do not distinguish transcription, timing, or scope differences.",
         },
         {
             "id": "HYP-002",

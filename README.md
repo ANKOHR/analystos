@@ -63,9 +63,9 @@ The ground-truth manifest is separate from the raw analysis inputs. QA and the r
 With seed 42, an example executive summary includes:
 
 ~~~text
-Cleaned transaction revenue totals $1,865,569.30 in synthetic USD units. [C-001]
-Revenue changed 12.12% between the opening and closing three-month windows. [C-002]
-The cleaned sales data contains 20 purchasing customers. [C-003]
+Cleaned transaction revenue totals $1,865,569.30 in synthetic USD units. [^C-001]
+Revenue changed 12.12% between the opening and closing three-month windows. [^C-002]
+The cleaned sales data contains 20 purchasing customers. [^C-003]
 ~~~
 
 Each claim reference resolves to an exact formula, source, and result in **build/results.json** and **build/claims.json**. For example, the trace command for C-001 returns the cleaned revenue sum and its source file. Values can change if the seed or implementation changes.
