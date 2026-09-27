@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "analystos"
+version = "0.1.0"
+description = "A deterministic, traceable analyst pipeline for synthetic company data"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "numpy==2.3.3",
+  "pandas==2.3.2",
+  "matplotlib==3.10.6",
+]
+
+[project.scripts]
+analystos = "analystos.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["analystos*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
