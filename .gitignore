@@ -8,6 +8,7 @@ build/
 BUILD-DONE.txt
 data/
 data-*/
+fresh-data/
 analystos-prompt.txt
 codex-build.log
 launch-codex.py
